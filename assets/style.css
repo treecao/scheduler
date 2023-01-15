@@ -1,0 +1,124 @@
+:root{
+  --pastelYellow: #ffffb5; 
+  --pastelGray: #c6dbda;
+  --blueBlack: #0F1529;
+  --whiteish: #ffffff;
+  --pastelPink: #fee1e8;
+  --pastelBlue: #55cbcd;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--whiteish);
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--pastelPink);
+  color: var(--blueBlack);
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: var(--blueBlack);
+  border-left: 1px solid var(--blueBlack);
+  padding: 10px;
+}
+
+/* added margins to enable fixing the header to the top */
+.container-lg {
+  margin-top: 225px;
+  margin-bottom: 20px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  border-radius: 15px;
+}
+
+.row {
+  border-top: 1px solid --whiteish;
+}
+
+.hour {
+  background-color: var(--whiteish);
+  color: #000000;
+  border-top: 1px dashed var(--blueBlack);
+  background-color: var(--pastelPink);
+}
+
+/* add margins */
+.past {
+  background-color: var(--pastelGray);
+  color: rgb(0, 0, 0);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* add margins */
+.present {
+  background-color: var(--pastelYellow);
+  color: var(--blueBlack);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/* add margins */
+.future {
+  background-color: var(--pastelBlue);
+  color: var(--blueBlack);
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--pastelPink);
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.clearInput {
+  margin-top: 20px;
+  background-color: var(--pastelPink);
+  color:var(--blueBlack);
+  font-style: bold;
+}
+
+.clearInput :hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: var(--whiteish);
+}
+
+.toolTip {
+  position: top;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
