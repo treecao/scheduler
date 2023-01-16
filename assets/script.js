@@ -46,7 +46,7 @@ $(document).ready(function () {
   //refactoring the previous lines here 
   for (let i=9; i < 18; i++){
     // console.log(i)
-    //use back ticks to enable referencing js
+    //use back ticks to enable referencing js "string interpolation"
     $(`#hour-${i} .description`).val(localStorage.getItem(`hour-${i}`));
   }
 

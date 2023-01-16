@@ -1,14 +1,14 @@
-:root{
-  --pastelYellow: #ffffb5; 
+:root {
+  --pastelYellow: #ffffb5;
   --pastelGray: #c6dbda;
-  --blueBlack: #0F1529;
+  --blueBlack: #0f1529;
   --whiteish: #ffffff;
   --pastelPink: #fee1e8;
   --pastelBlue: #55cbcd;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   background-color: var(--whiteish);
 }
@@ -80,7 +80,7 @@ textarea {
   margin-bottom: 1px;
 }
 
-.saveBtn {
+.saveBtn . {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -96,29 +96,53 @@ textarea {
 .clearInput {
   margin-top: 20px;
   background-color: var(--pastelPink);
-  color:var(--blueBlack);
+  color: var(--blueBlack);
   font-style: bold;
 }
 
-.clearInput :hover {
+.clearInput:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
   color: var(--whiteish);
 }
 
-.toolTip {
-  position: top;
+.mytooltip {
+  position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  border: 1px solid var(--pastelGray);
+  text-align: center;
+  border-radius: 6px;
 }
 
-.tooltip .tooltiptext::after {
-  content: "";
+.mytooltip .mytooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: var(--blueBlack);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: small;
+
   position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
+  z-index: 1;
+  bottom: 150%;
+  left: 47%;
+  margin-left: -60px;
+}
+
+.mytooltip .mytooltiptext::after {
+  /* content: "test test test"; */
+  position: absolute;
+  top: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
+}
+
+.mytooltip:hover .mytooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
