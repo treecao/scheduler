@@ -7,7 +7,7 @@ $(document).ready(function () {
     const timeStamp = $(this).parent().attr("id");
     const textInput = $(this).siblings(".description").val();
     localStorage.setItem(timeStamp, textInput); 
-    console.log("Saved input: " + textInput);
+    console.log(timeStamp + ": " + textInput);
   })
 
   //automation to have Past, Preset, & Future classes added/removed appropriately dependent on the hour of the day in reference to the current time

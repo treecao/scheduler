@@ -46,12 +46,12 @@ textarea {
 }
 
 .row {
-  border-top: 1px solid --whiteish;
+  border-top: 1px solid var(--whiteish);
 }
 
 .hour {
   background-color: var(--whiteish);
-  color: #000000;
+  color: var(--blueBlack);
   border-top: 1px dashed var(--blueBlack);
   background-color: var(--pastelPink);
 }
@@ -59,7 +59,7 @@ textarea {
 /* add margins */
 .past {
   background-color: var(--pastelGray);
-  color: rgb(0, 0, 0);
+  color: var(--blueBlack);
   margin-top: 1px;
   margin-bottom: 1px;
 }
@@ -81,11 +81,11 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid var(--blueBlack);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: var(--pastelPink);
-  color: white;
+  color: var(--whiteish);
 }
 
 .saveBtn i:hover {
@@ -118,7 +118,7 @@ textarea {
   visibility: hidden;
   width: 200px;
   background-color: var(--blueBlack);
-  color: #fff;
+  color: var(--whiteish);
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
@@ -139,7 +139,7 @@ textarea {
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: black transparent transparent transparent;
+  border-color: var(--blueBlack) transparent transparent transparent;
 }
 
 .mytooltip:hover .mytooltiptext {
